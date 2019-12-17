@@ -1,0 +1,42 @@
+.navBar{
+    display:flex;
+    background-color: #4696e5;   
+    flex-direction: column;
+}
+.labels{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+color:white;
+}
+
+
+.input-section{
+    background-color: #4696e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 200px 100px;
+    height: 130px;
+}
+.input-space{
+    flex:1;
+    margin-left: 30px;
+}
+.taskSpace{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin: 30px 400px;
+}
+.taskName{
+    margin-left: 30px;
+    flex:8;
+}
+.btn{
+    margin:0px 30px;
+}
+.taskSpace button{
+    flex:1;
+}
