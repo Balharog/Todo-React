@@ -21,9 +21,9 @@ addTodo = () =>
   if(this.state.input)
   {
     this.setState({todolist: this.state.todolist.concat({id:x, text:this.state.input, isComplete:false, label:"Complete" })})
-
+this.setState({input:""})
 }
-this.setState({input:''})
+
 }
 
 handleDelete=(i)=>
@@ -57,8 +57,8 @@ handleComplete=(id)=>
                     <p className="appText">Add new to-do</p>
                 </div>
                 <div className="input-section">
-                    <input className="input-space" type="text" onChange={this.handleChange}/>
-                    <button type="button" className="btn btn-outline-light" onClick={this.addTodo}>Add</button>
+                    <input className="input-space" type="text" value= {this.state.input} onChange={this.handleChange}/>
+                    <button type="button" className="btn btn-outline-light" onClick={ this.addTodo}>Add</button>
                 </div>
                 </div>
               
@@ -75,3 +75,5 @@ handleComplete=(id)=>
         )
     }
 }
+
+
